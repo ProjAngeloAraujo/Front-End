@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown list</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    nav{
+        background-color: #454545;
+    }
+    nav li{
+        display: inline-block;
+    }
+    nav li a{
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+    }
+    nav li a:hover{
+        background-color: brown;
+    }
+    .Dropdown-menu{
+        position: absolute;
+        box-shadow: 0 0 2px black;
+        display: none;
+    }
+    .Dropdown-menu a{
+        display: block;
+        color: black;
+    }
+    .Dropdown:hover .Dropdown-menu{
+        display: block;
+    }
+</style>
+<body>
+    <h1>Dropdown list</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="">HOME</a>
+            </li>
+            <li>
+                <a href="">Sobre</a>
+            </li>
+            <li  class="Dropdown">
+                <a href="">Serviços</a>
+                <div class="Dropdown-menu">
+                    <a href="">Serviço 1</a>
+                    <a href="">Serviço 2</a>
+                    <a href="">Serviço 3</a>
+                </div>
+            </li>
+            <li>
+                <a href="">Contato</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <form action="api/past">
+            <div>
+                <label for="idtexto">Texto:</label>
+                <input type="text" id="idtexto" name="idtexto">
+            </div>
+            <div>
+                <label for="idsenha">Senha:</label>
+                <input type="password" id="idsenha" name="idsenha">
+            </div>
+            <div>
+                <label for="iddate">Texto:</label>
+                <input type="date" id="iddate" name="iddate">
+            </div>
+            <div>
+                <label for="idemail">Texto:</label>
+                <input type="email" id="idemail" name="idemail">
+            </div>
+            <div>
+                <label for="idcheck1">Check 1</label>
+                <input type="checkbox" id="idcheck1" name="idcheck" value="Check 1">
+                <label for="idcheck2">Check 2</label>
+                <input type="checkbox" id="idcheck2" name="idcheck" value="Check 2">
+                <label for="idcheck3">Check 3</label>
+                <input type="checkbox" id="idcheck3" name="idcheck" value="Check 3">
+            </div>
+            <div>
+                <label for="idradio">Radio 1</label>
+                <input type="radio" name="idradio" value="Radio 1">
+                <label for="idradio">Radio 2</label>
+                <input type="radio" name="idradio" value="Radio 2">
+            </div>
+            <div>
+                <label for="idtexto">Caixa de texto</label>
+                <textarea name="idtexto" id="idtexto" rows="5" cols="5"></textarea>
+            </div>
+            <div>
+                <select name="selecao">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JS</option>
+                </select>
+            </div>
+            <input type="submit" value="Enviar Fora">
+        </form>
+    </main>
+</body>
+</html>
