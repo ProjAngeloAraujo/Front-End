@@ -1,0 +1,38 @@
+body{
+    background-color: #454545;
+    height: 200vh;
+}
+
+span{
+    color: white;
+}
+
+.Static{
+    background-color: darksalmon;
+}
+
+.Relative{
+    background-color: darkcyan;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.Abosolute{
+    background-color: darkmagenta;
+    position: absolute;
+    height: 50px;
+    top: 1rem;
+}
+
+.Fixed{
+    background-color: lightblue;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+
+.Sticky{
+    background-color: darkkhaki;
+    position: sticky;
+}

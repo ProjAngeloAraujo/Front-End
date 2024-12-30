@@ -1,0 +1,62 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: fantasy;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    background-color: #454545;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+section{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+section > h1{
+    font-size: 3rem;
+}
+
+section > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    padding-left: 1rem;
+}
+
+section > div > p{
+    font-size: 1.5rem;
+}
+
+section > div > a{
+    background-color: blue;
+    color: aliceblue;
+    padding: 0.5rem;
+}
+
+footer{
+    background-color: #454545;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}

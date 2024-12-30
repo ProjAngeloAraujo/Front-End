@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho e medidas</title>
+</head>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    .p{
+        font-size: 16px;
+    }
+    .pai1{
+        font-size: 50px;
+        background-color: cadetblue;
+        width: 100vw;
+        height: 100vh;
+    }
+    .pai1 > .filho1{
+        font-size: 0.5em;
+    }
+    .pai1 > .filho2{
+        font-size: 1rem;
+    }
+    .pai2{
+        width: 100vw;
+        height: 100vh;
+        background-color: aqua;
+    }
+    .pai3{
+        width: 100vw;
+        height: 100vh;
+        background-color: cornflowerblue;
+    }
+    .pai3 > div{
+        width: 50%;
+        height: 5rem;
+        background-color: darkorchid;
+    }
+    .pai3 > .filho1{
+        font-size: 2vmax;
+    }
+</style>
+<body>
+    <p class="p">Medidas aboslutas como px, rem e etc.</p>
+    <a href="#pai1">pai1</a>
+    <a href="#pai2">pai2</a>
+    <a href="#pai3">pai3</a>
+    <div class="pai1" id="pai1">
+        <p class="filho1">Medidas relativas variam de acordo com o elemento pai</p>
+        <p class="filho2">Medidas relativas variam de acordo com o documento</p>
+    </div>
+    <div class="pai2" id="pai2">
+        <p class="filho1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate fuga hic assumenda placeat excepturi voluptatem eius in ullam. Quisquam quos commodi provident vel assumenda expedita dolorem repellat vitae mollitia architecto.
+        </p>
+    </div>
+    <div class="pai3" id="pai3">
+        <div></div>
+        <p class="filho1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ex voluptatem nobis optio mollitia nulla nisi nostrum? Aspernatur suscipit tempore totam aut ex, corporis repudiandae quia provident maiores qui neque.
+        </p>
+    </div>
+</body>
+</html>
