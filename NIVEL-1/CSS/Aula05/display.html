@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<style>
+    div, p {
+        border: 2px solid green;
+    }
+    a {
+        border: 2px solid red;
+    }
+    em {
+        display: block;
+        border: 2px solid firebrick;
+    }
+    .a {
+        display: inline-block;
+        margin: 20px;
+    }
+    .none {
+        display: none;
+    }
+</style>
+<body>
+    <div>
+        <p>
+            Dipslay block ocupa a largura inteira da pagina e gera uma quebra de linha
+        </p>
+        <a>Display inline se comporta como elemento de linha não quebra linha e ocupa somente o espaço nescessario</a>
+        <a>Display inline se comporta como elemento de linha não quebra linha e ocupa somente o espaço nescessario</a>
+        <a class="a">Display inline se comporta como elemento de linha não quebra linha e ocupa somente o espaço nescessario</a>
+        <em>Largura e altura não funciona em inline, margin é so nas laterais, padding não funciona corretamente</em>
+        <a class="none">Display inline se comporta como elemento de linha não quebra linha e ocupa somente o espaço nescessario</a>
+    </div>
+</body>
+</html>
