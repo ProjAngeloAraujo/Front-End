@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body onload="alert('funfou')" onresize="console.log('hahahahahaha houve um redimecionamento')">
+    <h1>Eventos</h1>
+    <button onclick="ButtonClick()">Onclick</button>
+    <button ondblclick="OndbButtonClick()">Dois click</button>
+    <br>
+    <select id="itens" onchange="mudar()">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+        <option value="4">Valor 4</option>
+    </select>
+    <br>
+    <div id="hover" onmousemove="adicionaTexto()" onmouseout="desliga()" onmouseover="liga()"
+    style="margin:auto auto; width: 80%; height: 200px; background-color: khaki;">
+    <p id="texto"></p>
+    </div>
+    <br>
+    <input onfocus="limpar()" id="campoTexto" style="padding: 80px; font-size: 40px;" type="text" placeholder="escreva" value="texto esta aqui">
+    <input onchange="mudar()" id="campoTexto" style="padding: 80px; font-size: 40px;" type="text" placeholder="escreva" value="texto esta aqui">
+    <input onblur="desliga()" id="campoTexto" style="padding: 80px; font-size: 40px;" type="text" placeholder="escreva" value="texto esta aqui">
+    <input onkeypress="teclaPressionada()" id="campoTecla" style="padding: 80px; font-size: 40px;" type="text" placeholder="escreva" value="">
+    <script src="app.js"></script>
+</body>
+</html>
