@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        input, button { margin: 10px; padding: 8px; font-size: 16px; }
+        #resultado { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>API</h1>
+
+    <h2>Compartilhe Seu Sonho!</h2>
+    
+    <input type="text" id="nome" placeholder="Digite seu nome">
+    <input type="text" id="sonho" placeholder="Digite seu sonho">
+    <button onclick="salvarSonho()">Salvar Sonho</button>
+
+    <h2>Pesquise um Sonho</h2>
+    
+    <input type="text" id="pesquisa" placeholder="Digite um nome">
+    <button onclick="buscarSonho()">Buscar</button>
+
+    <div id="resultado"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
